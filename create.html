@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CodeSquad Comics</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codesquad Comics</title>
+    <link rel="stylesheet" type="text/css" href="/public/styles/course-project-styles.css">
 </head>
 <body>
-    <header>
-    <nav>
+
+<!-- header -->
+<header>
+    <nav class="nav-container">
         <a href="index.html">
             <img src="./public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics logo">
         </a>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-        </ul>
+    <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+    </ul>
     </nav>
     </header>
 
-    <article>
+<!-- main content -->
+
+    <main>
         <h1>CREATE A NEW COMIC</h1>
-        <form action="#">
+        <form class=form-container action="#">
             <label for="title">Title:</label>
-                <input type="text" id="title" name="title" placeholder="Title"><br>
+                <input type="text" id="title" name="title" placeholder="Title">
+                <br>
+
             <label for="author">Author:</label>
-                 <input type="text" id="author" name="author" placeholder="Author"><br>
+                 <input type="text" id="author" name="author" placeholder="Author">
+                 <br>
+
             <label for="publisher">Publisher:</label>
                  <select name="publisher" id="publisher" name="publisher">
                     <option value="BOOM! Box">BOOM! Box</option>
@@ -37,34 +49,39 @@
                     <option value="VIZ Media LLC" placeholder="Select">VIZ Media LLC</option>
                 </select>
                 <br>
+
             <label for="genre">Genre:</label>
                 <input type="text" id="genre" name="genre" placeholder="Genre">
                 <br>
             <label for="number of pages">Number of pages:</label>
                 <input type="text" id="number of pages" name="number of pages" placeholder="Number of pages">
                 <br>
+
             <label for="rating">Rating:</label>
                 <input type="text" id="rating" name="rating">
                 <br>
+
             <label for="synopsis">Synopsis:</label> 
                 <textarea name="synopsis" id="synopsis" cols="30" rows="2" placeholder="Synopsis"></textarea>
-            <br>
+                <br>
             <input type="submit" value="Submit">
         </form>
-    </article>
+    </main>
     
-    <footer>
-        <section>
+<!-- footer -->
+<footer class= footer-container>
+    <section>
         <h3>
             VISIT US
         </h3>
-        <p>
             CodeSquad Comics 
             <br>
             123 Dorchester Avenue
             <br>
             Boston, MA 02124
-        </section>
+    </section>
+      
+    <section>
         <h3>
             LINKS     
         </h3>
@@ -73,24 +90,27 @@
             <a href="about.html">About</a>
             <br>
             <a href="login.html">Login</a>
-        <section>
-            <h3>
-                FOLLOW US
-            </h3>
+    </section>
+      
+    <section>
+        <h3>
+            FOLLOW US
+        </h3>
             <a href="https://www.facebook.com/CodeSquadOrg" target="_blank" rel="noopener noreferrer">Facebook</a>
             <br>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
             <br>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-        </section>
-        <section>
-            <h3>
-                A PRODUCT OF
-            </h3>
+    </section>
+      
+    <section>
+        <h3>
+            A PRODUCT OF
+        </h3>
             <a href="https://CodeSquad.org" target="_blank" rel="noopener noreferrer">
-                <img src="./public/images/CodeSquad-logo-a.png" alt="CodeSquad logo"> 
+                <img src="./public/images/CodeSquad-logo-b.png" alt="CodeSquad logo"> 
             </a>   
-        </section>
-    </footer>
+    </section>
+</footer>
 </body>
 </html>
