@@ -66,6 +66,7 @@ main {
 .admin-table {
     border: black solid 1px;
     border-collapse: collapse;
+    margin: auto;
 }
 
 .admin-table th,
