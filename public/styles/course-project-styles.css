@@ -222,6 +222,9 @@ div.comic-cover {
 }
 
 /* parable-of-the-sower */
+.yellow-font-color {
+    color: var(--yellow);
+}
 .card-container {
     border: solid var(--yellow) 4px;
     border-radius: 20px;
