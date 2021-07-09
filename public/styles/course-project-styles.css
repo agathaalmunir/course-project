@@ -1,5 +1,11 @@
 /* body */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --blue: #063C5E;
     --yellow: #FCCF14;
@@ -21,24 +27,31 @@ body {
     font-size: 1.4rem;
 }
 
+
 /* header*/
-.nav-container{
+header {
+    background-color: var(--blue);
+    padding: 1rem 1rem;
+}
+
+.navbar{
     font-family: 'Fredericka the Great', serif;
     background-color: var(--blue);
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.nav-links-container {
-    display: flex;
-    flex-flow: row wrap ;
-    justify-content: flex-end;
+.navbar {
+    display: none;
 }
 
-   
-.nav-links,
+.navbar.open {
+    display: block;
+ }
+
+.navbar-list {
+    list-style: none;
+}
+
 .footer-container section {
     display: inline-block;
     padding: 2em;
@@ -46,21 +59,22 @@ body {
     text-decoration: none;
 }
 
-.nav-links a:link,
+
+.navbar-list a:link,
 .footer-container a:link,
-.nav-links a:visited,
+.navbar-list a:visited,
 .footer-container a:visited {
     color: var(--white);
     text-decoration: none;
 }
 
-.nav-links  a:hover,
+.navbar-list a:hover,
 .footer-container a:hover {
     color: var(--yellow);
     font-weight: bold;
 }
 
-.nav-links  a:active,
+.navbar-list  a:active,
 .footer-container  a:active{
     color: #063C5E;
     background-color: var(--yellow);
@@ -68,11 +82,16 @@ body {
 }
 
 .logo {
-    width: 300px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-flow: row wrap;
+    width: 14rem;
+}
+
+.menu-icon {
+   display: block; 
+   color: var(--white);
+   position: absolute;
+   right: 0;
+   top: 0;
+   padding: 1rem 1rem;
 }
 
 /* main content */
@@ -94,14 +113,14 @@ main {
 .flex-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .flex-column {
     display: flex;
     flex-flow: column wrap;
-    justify-items: flex-start;
-    align-items: center;
+    /* justify-items: flex-start;
+    align-items: center; */
 }
 
 /* admin */
@@ -298,3 +317,54 @@ div.comic-cover {
 .icons {
     font-size: 1.6em;
 }
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        margin-left: 15rem;
+    }
+
+    .navbar-list {
+		display: flex;
+        flex-flow: row;
+		justify-content: space-around;
+		font-size: 1.25rem;
+	}
+
+    .logo {
+        flex: 1;
+    }
+
+    .navbar {
+        flex: 2;
+    }
+}
+
+/* Target mobile screnn */
+/* @media screen and (min-width: 320px) and (max-width: 480px) {
+
+} */
+    
+/* Target tablet screen */
+/* @media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-color: plum;
+    }
+} */
+
+/*Target desktop screen */
+/* @media screen and (min-width:769px) {
+    body {
+        background-color: lightcoral;
+    }
+} */
