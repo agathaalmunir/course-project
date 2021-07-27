@@ -108,6 +108,7 @@ main {
     font-family: 'Fredericka the Great', serif;
     color: var(--blue);
     text-align: center;
+    
 }
 
 .flex-row {
@@ -118,9 +119,11 @@ main {
 
 .flex-column {
     display: flex;
-    flex-flow: column wrap;
-    /* justify-items: flex-start;
-    align-items: center; */
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
 }
 
 /* admin */
