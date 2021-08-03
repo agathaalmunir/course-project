@@ -173,7 +173,7 @@ main {
 .form-container {
     margin: auto;
     padding: 10px;
-    text-align: right;
+    text-align: end;
     width: 50%;
 }
 
@@ -185,7 +185,6 @@ main {
 }
 
 .form label {
-    width: 50%;
     vertical-align: top;
 }
 
