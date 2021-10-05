@@ -108,6 +108,7 @@ main {
     font-family: 'Fredericka the Great', serif;
     color: var(--blue);
     text-align: center;
+    line-height: 1em;
     
 }
 
@@ -250,18 +251,17 @@ div.comic-cover {
     border: solid var(--yellow) 4px;
     border-radius: 20px;
     margin: 3em auto;
-    width: 800px;
+    padding: 0;
+    width: 80%;
     height: auto;
     line-height: 2rem;
-    display: flex;
-    flex-flow: column wrap;
 }
 
 .card-top img {
-    width: 400px;
+    width: 90%;
     position: relative;
     border: var(--white) solid 4px;
-    border-radius: 3em;
+    border-radius: 1em;
 }
 
 .card-top {
@@ -279,22 +279,12 @@ div.comic-cover {
     display: inline;
 }
 
-.card-bottom div {
-    margin: 1em 0em;  
-}
-
 .card-bottom {
-    padding: 2rem;
-    display: flex;
-    flex-flow: column wrap;
+    padding: 1em;
 }
 
 #book-title {
     font-style: italic;
-}
-
-.card-bottom p {
-    display: inline;
 }
 
 /* footer */
@@ -350,6 +340,20 @@ div.comic-cover {
     .navbar {
         flex: 2;
     }
+
+@media screen and (min-width: 1024px) {
+    .card-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-top {
+        flex: 1;
+    }
+
+    .card-bottom {
+        flex: 1;
+    }
 }
 
 /* Target mobile screnn */
@@ -363,6 +367,6 @@ div.comic-cover {
 } */
 
 /*Target desktop screen */
-/* @media screen and (min-width:769px) {
+/* @media screen and (min-width:1040px) {
    
 } */
