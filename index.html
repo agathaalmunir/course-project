@@ -1,186 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codesquad Comics</title>
+    <link rel="stylesheet" type="text/css" href="./public/styles/course-project-styles.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open-Sans&display=swap">
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-    <nav>
-        <a href="index.html">
-            <img src="./public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics logo">
-        </a>
-        <ul>
+
+<!-- header -->
+<header>
+    <a href="index.html">
+        <img class="logo" src="./public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics logo">
+    </a>
+    <nav class="navbar">
+        <ul class="navbar-list">
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="login.html">LOGIN</a></li>
         </ul>
     </nav>
-    </header>
+    <a href="javascript:void(0);" class="menu-icon">
+        <i class="fas fa-bars fa-2x"></i>
+    </a>
+</header>
 
-    <section>
-        <h1>
-            CODESQUAD COMICS
-        </h1>
-        <p>CodeSquad Comics is a collection of graphic novels read by Agatha Almunir. The site is intended to display comic book covers along with information about each book, including the author, a rating, and other details about the graphic novel. Browse through the complete collection below. Click on the cover image or the Details link to see even more information for each graphic novel including the publisher, genre, number of pages, and a brief synopsis. The About page includes meta information about this collection. Login is only available to the site administrator at this time.
-    </section>
+<!-- main content -->
+<main class="main-container">
+    <h1>
+        CODESQUAD COMICS
+    </h1>
+    <p>CodeSquad Comics is a collection of graphic novels read by Agatha Almunir. The site is intended to display comic book covers along with information about each book, including the author, a rating, and other details about the graphic novel. Browse through the complete collection below. Click on the cover image or the Details link to see even more information for each graphic novel including the publisher, genre, number of pages, and a brief synopsis. The About page includes meta information about this collection. Login is only available to the site administrator at this time.</p>
+</main>
 
-    <section>
-        <h2>
-            COMPLETE COMIC COLLECTION
-        </h2>
-        <p>
+<section class="comic-section">
+    <h2>
+        COMPLETE COMIC COLLECTION
+    </h2>
+<section class="comic-flexbox">
+    <div class= "comic-cover">
         <a href="#">
-            <img src="public/images/fun-home.jpg" alt="Fun Home book cover" style="width: 200px;">
+            <img src="public/images/fun-home.jpg" alt="Fun Home book cover" >
         </a>
             <br><i>Fun Home: A Family Tragicomic</i>
             <br>by Alison Blecdel
             <br>5 stars
             <br><a href="#">Details</a>
-        <br>
+    </div>
 
-        <a href="#"></a>
-            <img src="public/images/watchmen.jpg" alt="Watchmen book cover" style="width: 200px;">
+    <div class= "comic-cover">
+        <a href="#">
+            <img src="public/images/watchmen.jpg" alt="Watchmen book cover" >
          </a>
             <br><i>Watchmen</i>
             <br>by Alan Moore
             <br>5 stars
             <br><a href="#">Details</a>
-        <br>
-
+    </div>
+        
+    <div class= "comic-cover">
         <a href="#">
-            <img src="public/images/hunter-x-hunter.jpg" alt="hunter-x-hunter book cover" style="width: 200px;">
+            <img src="public/images/hunter-x-hunter.jpg" alt="hunter-x-hunter book cover" >
         </a>
             <br><i>Hunter X Hunter Vol. 1</i>
             <br>by Yoshihiro Togashi 
             <br>5 stars
             <br><a href="#">Details</a>
-        <br>
-
+    </div>
+      
+    <div class= "comic-cover">
         <a href="#">
-            <img src="public/images/lumberjanes.jpg" alt="lumberjanes book cover" style="width: 200px;">
+            <img src="public/images/lumberjanes.jpg" alt="lumberjanes book cover" >
         </a>
             <br><i>Lumberjanes Vol. 1</i>
             <br>by Noelle Stevenson
             <br>4 stars
             <br><a href="#">Details</a>
-        <br>
-
+    </div>
+      
+    <div class= "comic-cover">
         <a href="#">
-            <img src="public/images/one-piece.jpg" alt="one-piece book cover" style="width: 200px;">
+            <img src="public/images/one-piece.jpg" alt="one-piece book cover" >
         </a>
             <br><i>One Piece, Vol. 1: Romance Dawn</i>
             <br>by Eiichiro Oda
             <br>5 stars
             <br><a href="#">Details</a>  
-        <br>
-        
+    </div>
+ 
+    <div class= "comic-cover">
         <a href="#">
-            <img src="public/images/wake.jpg" alt="Wake book cover" style="width: 200px;">
+            <img src="public/images/wake.jpg" alt="Wake book cover" >
         </a>
             <br><i>Wake: The Hidden History of Women-Led Slave Revolts</i>
             <br>by Rebecca Hall
             <br>4 stars
             <br><a href="#">Details</a>
-        <br>
-
+    </div>
+        
+    <div class= "comic-cover">
         <a href="#">
-            <img src="./public/images/black-panther.jpg"  alt=" black panther book cover" style="width: 200px;">
+            <img src="./public/images/black-panther.jpg"  alt=" black panther book cover" >
         </a>
             <br><i>Black Panther: A Nation Under Our Feet Book 1</i>
             <br>by Ta-Nehisi Coates
             <br>3 stars
             <br><a href="#">Details</a>
-        <br>
+    </div>
 
+    <div class= "comic-cover">
         <a href="#">
-            <img src="./public/images/the-walking-dead.jpg" alt="the walking dead book cover" style="width: 200px;">
+            <img src="./public/images/the-walking-dead.jpg" alt="the walking dead book cover" >
         </a>
             <br><i>The Walking Dead, Vol. 1: Days Gone Bye</i>
             <br>by Robert Kirkman
             <br>4 stars
             <br><a href="#">Details</a>
-        <br>
+    </div>
 
+    <div class= "comic-cover">
         <a href="#">
-            <img src="./public/images/march.jpg" alt="march book cover" style="width: 200px;">
+            <img src="./public/images/march.jpg" alt="march book cover" >
         </a>
             <br><i>March: Book One</i>
             <br>by John Lewis
             <br>5 stars
             <br><a href="#">Details</a>
-        <br>
+    </div>
 
+    <div class= "comic-cover">
         <a href="#">
-            <img src="./public/images/batman.jpg" alt="batman book cover" style="width: 200px;">
+            <img src="./public/images/batman.jpg" alt="batman book cover" >
         </a>
             <br><i>Bathman: The Dark Knight Returns</i>
             <br>by Frank Miller
             <br>3 stars
             <br><a href="#">Details</a>
-        <br>
+    </div>
 
+    <div class= "comic-cover">
         <a href="#">
-            <img src="./public/images/queer.jpg" alt="queer book cover" style="width: 200px;">
+            <img src="./public/images/queer.jpg" alt="queer book cover" >
         </a>
             <br><i>Queer: A Graphic History</i>
             <br>by Meg-John Barker
             <br>4 stars
             <br><a href="#">Details</a>
-        <br>
+    </div>
 
-        <a href="#">
-            <img src="./public/images/parable-of-the-sower.jpg" alt="parable of the sower book cover" style="width: 200px;">
+    <div class= "comic-cover">
+        <a href="./parable-of-the-sower.html">
+            <img src="./public/images/parable-of-the-sower.jpg" alt="parable of the sower book cover" >
         </a>
             <br><i>Parable of the Sower</i>
             <br>by Octavia E. Butler
             <br>4 stars
-            <br><a href="#">Details</a>
-        <br>
-    <div>
-        <button type="button">DISPLAY MORE</button> 
+            <br><a href="./parable-of-the-sower.html">Details</a>
     </div>
-        </p>
-     </section>
+</section> 
+    <div class="index-dispay-button">
+        <button class="yellow-btn" type="button">DISPLAY MORE</button> 
+    </div>
 
-        <footer>
-            <section>
-            <h3>
-                VISIT US
-            </h3>
-            <p>
-                CodeSquad Comics 
-                <br>
-                123 Dorchester Avenue
-                <br>
-                Boston, MA 02124
-            </section>
-            <h3>
-                LINKS     
-            </h3>
-                <a href="index.html">Home</a> 
-                <br>
-                <a href="about.html">About</a>
-                <br>
-                <a href="login.html">Login</a>
-            <section>
-                <h3>
-                    FOLLOW US
-                </h3>
-                <a href="https://www.facebook.com/CodeSquadOrg" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <br>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <br>
-                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-            </section>
-            <section>
-                <h3>
-                    A PRODUCT OF
-                </h3>
-                <a href="https://CodeSquad.org" target="_blank" rel="noopener noreferrer">
-                    <img src="./public/images/CodeSquad-logo-a.png" alt="CodeSquad logo"> 
-                </a>   
-            </section>
-        </footer>
+</section>
+
+<!-- footer -->
+<footer class= "footer-container">
+    <section>
+        <h3>
+            VISIT US
+        </h3>
+            CodeSquad Comics 
+            <br>
+            123 Dorchester Avenue
+            <br>
+            Boston, MA 02124
+    </section>
+      
+    <section>
+        <h3>
+            LINKS     
+        </h3>
+            <a href="index.html">Home</a> 
+            <br>
+            <a href="about.html">About</a>
+            <br>
+            <a href="login.html">Login</a>
+    </section>
+      
+    <section>
+        <h3>
+            FOLLOW US
+        </h3>
+        <div class="comic-flexbox icons" >
+            <a href="https://www.facebook.com/CodeSquadOrg" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <br>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <br>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </section>
+      
+    <section>
+        <h3>
+            A PRODUCT OF
+        </h3>
+            <a href="https://CodeSquad.org" target="_blank" rel="noopener noreferrer">
+                <img src="./public/images/CodeSquad-logo-b.png" alt="CodeSquad logo"> 
+            </a>   
+    </section>
+</footer>
 </body>
 </html>
-    
